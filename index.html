@@ -67,7 +67,47 @@
       </section>
       <div class="backdrop is-hidden" data-modal>
 <div class="modal">
-  <p> </p>
+  <form class="form"> 
+   <h3 class="form-title"> Залиште свої дані, ми вам передзвонимо </h3>
+
+  
+    <label class="form-label" > <span class="form-text">Ім'я</span>
+    <input class="form-input" type="text" name="user" >
+  <svg class="icon-svg" width="12" height="12">
+      <use href="./images/sprite-modal.svg#icon-man"> </use> </svg> 
+     </label>
+  
+    
+      <label class="form-label" > <span class="form-text">Телефон</span> 
+      <input class="form-input" type="tel" name="telephone">
+      <svg class="icon-svg" width="13" height="13">
+      <use href="./images/sprite-modal.svg#icon-tel"> </use> </svg>
+    </label>   
+    
+      
+
+  <label class="form-label" > <span class="form-text">Пошта</span> 
+  <input class="form-input" type="email" name="email" >
+  <svg class="icon-svg" width="15" height="12">
+  <use href="./images/sprite-modal.svg#icon-mail"> </use> </svg> </label>
+      
+      
+
+     
+      <label class="form-label" > <span class="form-text">Коментар</span>
+        </label> 
+<textarea class="comment" name="comment"  cols="30" rows="10" placeholder="Введіть текст" ></textarea>
+
+
+<label>
+  <input type="checkbox" name="hobby" value="music" checked />
+  Погоджуюся з розсилкою та приймаю <span> <a href="">Умови договору </a> </span>
+</label>
+      
+<button type="submit"> Відправити </button>
+    
+      
+  </form>
   <button class="btn-close" type="button" data-modal-close> <svg class="vector" width="11" height="11">
     <use href="./images/modal.svg#icon-Vector-1"> </use>
   </svg>
@@ -493,6 +533,20 @@
               </a>
             </li>
           </ul>
+        </div>
+        
+        <div>
+     
+      <label for="send">Підпишіться на розсилку
+      </label>
+      <input type="send" name="send" id="send" placeholder="E-mail">
+      <button>
+        Підписатися 
+        <svg width="24" height="24">
+          <use href="./images/sprite-modal.svg#icon-send"> </use>
+        </svg>
+      </button>
+          
         </div>
       </div>
     </footer>

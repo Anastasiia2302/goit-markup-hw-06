@@ -102,11 +102,10 @@
 
 <div class="checkbox">
   <label class="form-label">
-    <input class="check-input" type="checkbox" name="agreement" value="agreement"  />
-   <svg class="icon-check" width="16" height="15">
-      <use href="./images/sprite-modal.svg#icon-check"> </use>
-     </svg>
-      <span class="text-agree">  Погоджуюся з розсилкою та приймаю  <a class="agreement" href="">Умови договору</a> </span>
+    <input class="check-input" type="checkbox" name="agreement"/>
+   <span class="icon-check"> </span>
+  
+    <span class="text-agree">  Погоджуюся з розсилкою та приймаю  <a class="agreement" href="">Умови договору</a> </span>
     
 </label>
 </div>
@@ -541,12 +540,11 @@
           </ul>
         </div>
         
-        <div>
-     
-      <label for="send">Підпишіться на розсилку
+        <div class="send">
+      <label class="send-label"> <span class="text-send">Підпишіться на розсилку</span>
       </label>
-      <input type="send" name="send" id="send" placeholder="E-mail">
-      <button>
+      <input class="send-input" type="email" name="email" placeholder="E-mail">
+      <button class="btn-send">
         Підписатися 
         <svg width="24" height="24">
           <use href="./images/sprite-modal.svg#icon-send"> </use>

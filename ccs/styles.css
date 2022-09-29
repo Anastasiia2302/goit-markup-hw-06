@@ -239,6 +239,7 @@ border-radius: 4px;
 
 }
 .form {padding: 40px;
+
 }
 .form-title {
 font-weight: 700;
@@ -252,40 +253,38 @@ margin-bottom: 12px;
 }
 .form-list {position: relative;}
 
-
+.form-list{display: flex;
+flex-direction: column;}
 .form-label {
+  display: block;
   position: relative;
-  display:inline-block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
 letter-spacing: 0.01em;
   color: var(--second-color-text);
-
-
 }
 .form-input {position: relative;
-  display: inline-block;
-margin-bottom: 10px;
+ margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  width: 448px;
-  height: 40px;
+height: 40px;
+width: 100%;
 padding-top:11px;
 padding-bottom: 11px;
 padding-left: 42px;
+cursor: pointer;
 
 }
 .form-text {display: block;
   margin-bottom: 4px;}
+
 .icon-svg {
  position: absolute; 
  display: inline-block;
- top:50%;
+ top:45%;
  left:15px;
- 
- 
- transform: translateY(-50%);}
+ }
 
 .form-input:focus ~.icon-svg {fill:var(--also-text-color)}
 .form-input:focus {outline: none;
@@ -298,8 +297,55 @@ border:1px solid var(--also-text-color);}
   border-radius: 4px;
   width: 448px;
   height: 120px;
-  resize:none}
+  resize:none;
+margin-bottom: 20px;}
 .comment:focus {outline: none; }
+.agreement {color: var(--also-text-color);
+  
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+margin-bottom: 30px;
+
+
+}
+.check-input {-webkit-appearance:none;
+  -moz-appearance:none;
+       appearance:none;
+position: absolute;}
+
+  
+.icon-check  {position: absolute;
+ display: flex;
+ align-items: baseline;
+ 
+}
+ 
+.text-agree {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+ }
+
+
+
+.btn-check {display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  border: none;
+  background: var(--also-text-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+color: var(--text-color);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.9;
+cursor: pointer;}
 
 .btn-close {display: flex;
   align-items: center;
@@ -321,6 +367,7 @@ cursor: pointer;
 
 .btn-close:focus .vector {fill:var(--also-text-color)}
 .btn-close:hover .vector {fill:var(--also-text-color)}
+
 /* section-features */
 
 .features-title {

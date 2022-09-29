@@ -70,48 +70,54 @@
   <form class="form"> 
    <h3 class="form-title"> Залиште свої дані, ми вам передзвонимо </h3>
 
-  
+  <div class="form-list">
     <label class="form-label" > <span class="form-text">Ім'я</span>
     <input class="form-input" type="text" name="user" >
   <svg class="icon-svg" width="12" height="12">
       <use href="./images/sprite-modal.svg#icon-man"> </use> </svg> 
      </label>
+  </div>
   
-    
+    <div class="form-list">
       <label class="form-label" > <span class="form-text">Телефон</span> 
       <input class="form-input" type="tel" name="telephone">
       <svg class="icon-svg" width="13" height="13">
       <use href="./images/sprite-modal.svg#icon-tel"> </use> </svg>
     </label>   
-    
+  </div>
       
-
+  <div class="form-list">
   <label class="form-label" > <span class="form-text">Пошта</span> 
   <input class="form-input" type="email" name="email" >
   <svg class="icon-svg" width="15" height="12">
   <use href="./images/sprite-modal.svg#icon-mail"> </use> </svg> </label>
-      
+</div> 
       
 
-     
+<div class="form-list"> 
       <label class="form-label" > <span class="form-text">Коментар</span>
         </label> 
 <textarea class="comment" name="comment"  cols="30" rows="10" placeholder="Введіть текст" ></textarea>
+</div>
 
-
-<label>
-  <input type="checkbox" name="hobby" value="music" checked />
-  Погоджуюся з розсилкою та приймаю <span> <a href="">Умови договору </a> </span>
-</label>
-      
-<button type="submit"> Відправити </button>
+<div class="checkbox">
+  <label class="form-label">
+    <input class="check-input" type="checkbox" name="agreement" value="agreement"  />
+   <svg class="icon-check" width="16" height="15">
+      <use href="./images/sprite-modal.svg#icon-check"> </use>
+     </svg>
+      <span class="text-agree">  Погоджуюся з розсилкою та приймаю  <a class="agreement" href="">Умови договору</a> </span>
     
-      
+</label>
+</div>
+<button class="btn-check" type="submit"> Відправити </button>
+    
+<button class="btn-close" type="button" data-modal-close> <svg class="vector" width="11" height="11">
+  <use href="./images/modal.svg#icon-Vector-1"> </use>
+</svg>
+</button>   
   </form>
-  <button class="btn-close" type="button" data-modal-close> <svg class="vector" width="11" height="11">
-    <use href="./images/modal.svg#icon-Vector-1"> </use>
-  </svg>
-</button>
+ 
 
 </div>
       </div>
